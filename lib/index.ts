@@ -19,7 +19,7 @@ Object.defineProperty(exports, 'Promise', {
 exports.print = function (err, reply) {
   if (err) {
     console.log('Error: ' + err)
-  } else {
+  } else if (reply.search(/(ok)/) === -1) {
     console.log('Reply: ' + reply)
   }
 }
