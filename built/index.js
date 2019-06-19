@@ -20,7 +20,7 @@ exports.print = function (err, reply) {
     if (err) {
         console.log('Error: ' + err);
     }
-    else if (reply.search(/(ok)/) === -1) {
+    else if (reply.search(/(OK)/) === -1) {
         console.log('Reply: ' + reply);
     }
 };
